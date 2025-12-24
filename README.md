@@ -6,7 +6,7 @@ A winter-focused pet care platform helping owners keep their pets warm, safe, an
 
 ## 🔗 Live Demo
 
-[View Live Site](https://assignment-09-petcare-web.netlify.app/)
+[View Live Site](https://ph-09-bac74.web.app/)
 
 ## Key Features
 
@@ -39,7 +39,7 @@ React.js, React Router, Firebase Auth, Tailwind CSS, Swiper.js, AOS, react-hot-t
 ## Usage
 
 ```bash
-git clone https://github.com/programming-hero-web-course2/b12-a9-firesheild-mdfardous98.git
+git clone https://github.com/mdfardous98/ph-09-pet-care-in-winter.git
 ```
 
 ```bash
