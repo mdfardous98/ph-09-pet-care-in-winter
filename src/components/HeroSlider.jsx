@@ -45,12 +45,14 @@ const HeroSlider = () => {
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>
           <div className="relative h-[90vh] md:h-screen flex items-center justify-center overflow-hidden">
+           
             <img
               src={slide.image}
               alt={slide.title}
               className="w-full h-full object-cover scale-105 hover:scale-110 transition-transform duration-[4000ms] ease-linear"
             />
 
+        
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70 z-10"></div>
 
             <div className="absolute z-20 text-center px-6 md:px-10 max-w-2xl mx-auto">

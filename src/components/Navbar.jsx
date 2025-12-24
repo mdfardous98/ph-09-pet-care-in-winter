@@ -12,6 +12,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50 border-b border-[#FF8F8F]/20">
       <div className="container mx-auto px-6 py-3 flex justify-between items-center">
+      
         <Link
           to="/"
           className="flex items-center gap-2 text-2xl md:text-3xl font-extrabold text-[#FF8F8F] hover:scale-105 transition-transform duration-300"
@@ -19,6 +20,7 @@ const Navbar = () => {
           <FaPaw className="text-3xl" /> PetCare
         </Link>
 
+       
         <button
           className="md:hidden text-2xl text-[#FF8F8F]"
           onClick={toggleMenu}
@@ -26,6 +28,7 @@ const Navbar = () => {
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
 
+     
         <div
           className={`absolute md:static left-0 top-full w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none md:flex md:items-center gap-6 transition-all duration-300 ease-in-out ${
             isOpen
@@ -73,6 +76,7 @@ const Navbar = () => {
             My Profile
           </NavLink>
 
+         
           {user ? (
             <div className="flex flex-row md:items-center gap-4 mt-3 md:mt-0 px-6 md:px-0">
               <div className="relative group">

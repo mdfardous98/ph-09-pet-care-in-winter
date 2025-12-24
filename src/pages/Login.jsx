@@ -26,7 +26,7 @@ const Login = () => {
       await signIn(email, password);
       toast.success("Login successful!");
     } catch (err) {
-      const error = err; // keep linter happy
+      const error = err; 
       switch (error.code) {
         case "auth/wrong-password":
           toast.error("Password is incorrect!");
@@ -48,7 +48,8 @@ const Login = () => {
       await signInWithGoogle();
       toast.success("Google login successful!");
     } catch (err) {
-      const error = err; // keep linter happy
+      const error = err; 
+      console.log(error);
       toast.error("Google login failed!");
     }
   };

@@ -1,16 +1,64 @@
-# React + Vite
+# PetCare – Pet Care in Winter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A winter-focused pet care platform helping owners keep their pets warm, safe, and healthy. Explore grooming, paw treatments, cozy outfits, expert tips, and local services—all in one SPA.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## React Compiler
+[View Live Site](https://assignment-09-petcare-web.netlify.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Features
 
-## Expanding the ESLint configuration
+- \*\*Responsive design for all devices
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- \*\*SPA with smooth routing
+
+- \*\*Authentication: email/password & Google login
+
+- \*\*Protected service details page
+
+- \*\*Dynamic service cards from JSON
+
+- \*\*Booking forms with toast notifications
+
+- \*\*User profile view & update
+
+- \*\*Winter tips & expert vet advice
+
+- \*\*Subtle animations with Swiper.js & react-hot-toast
+
+  ***
+
+##Tech Stack
+
+React.js, React Router, Firebase Auth, Tailwind CSS, Swiper.js, AOS, react-hot-toast
+
+---
+
+## Usage
+
+```bash
+git clone https://github.com/programming-hero-web-course2/b12-a9-firesheild-mdfardous98.git
+```
+
+```bash
+npm install
+```
+
+```bash
+npm start
+```
+
+```bash
+npm run build
+```
+
+---
+
+## Developer
+
+Md. Fardous
+Email: mdjfardous@gmail.com
+
+GitHub: mdfardous98

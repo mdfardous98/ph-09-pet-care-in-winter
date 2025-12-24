@@ -1,17 +1,26 @@
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
-import PrivateRoute from "./PrivateRoute";
-import ServiceDetails from "../pages/ServiceDetails";
 import Profile from "../pages/Profile";
-import NotFound from "../pages/NotFound";
+import ServicesPage from "../pages/ServicesPage";
+import ServiceDetails from "../pages/ServiceDetails";
 import ForgetPassword from "../pages/ForgetPassword";
+import NotFound from "../pages/NotFound";
+import PrivateRoute from "../components/PrivateRoute";
 
 const RoutesWrapper = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route
+        path="/services"
+        element={
+          <PrivateRoute>
+            <ServicesPage />
+          </PrivateRoute>
+        }
+      />
       <Route
         path="/service/:id"
         element={

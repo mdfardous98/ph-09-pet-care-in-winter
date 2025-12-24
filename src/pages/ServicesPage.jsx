@@ -14,10 +14,12 @@ const ServicesPage = () => {
   const [loading, setLoading] = useState(true);
   const alertShown = useRef(false);
 
+ 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 800);
     return () => clearTimeout(timer);
   }, []);
+
 
   useEffect(() => {
     if (!authLoading && !alertShown.current) {

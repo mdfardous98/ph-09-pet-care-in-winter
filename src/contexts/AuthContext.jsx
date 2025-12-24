@@ -19,6 +19,7 @@ export const AuthProvider = ({ children }) => {
   const [authLoading, setAuthLoading] = useState(true);
   const googleProvider = new GoogleAuthProvider();
 
+
   const createUser = async (email, password, name, photoURL) => {
     try {
       const userCredential = await createUserWithEmailAndPassword(
@@ -47,6 +48,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  
   const signIn = async (email, password) => {
     try {
       const userCredential = await signInWithEmailAndPassword(
@@ -62,6 +64,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+ 
   const signInWithGoogle = async () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
@@ -73,6 +76,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+ 
   const logOut = async () => {
     try {
       await signOut(auth);
@@ -81,6 +85,7 @@ export const AuthProvider = ({ children }) => {
       console.error("Logout error:", error.message);
     }
   };
+
 
   const resetPassword = async (email) => {
     try {
@@ -91,6 +96,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+ 
   const updateUserProfile = async (profile) => {
     if (!auth.currentUser) return;
     try {
@@ -106,6 +112,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -115,6 +122,7 @@ export const AuthProvider = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
+  
   const authInfo = {
     user,
     authLoading,

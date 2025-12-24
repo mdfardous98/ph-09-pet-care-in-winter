@@ -11,6 +11,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-[#FFF0F0] via-[#FFEAEA] to-[#FFF7F7] text-gray-700 mt-24 shadow-inner rounded-t-3xl border-t border-[#FFBDBD]/40">
       <div className="container mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+      
         <Link
           to="/"
           className="flex items-center gap-2 text-3xl font-extrabold text-[#FF8F8F] hover:scale-105 transition-transform duration-300"
@@ -19,6 +20,7 @@ const Footer = () => {
           PetCare
         </Link>
 
+       
         <div className="flex gap-6 text-2xl">
           <a
             href="https://twitter.com"
@@ -54,6 +56,7 @@ const Footer = () => {
           </a>
         </div>
 
+       
         <p className="text-gray-600 text-sm text-center md:text-left">
           © {new Date().getFullYear()}{" "}
           <span className="hidden sm:inline">|</span> All rights reserved by{" "}

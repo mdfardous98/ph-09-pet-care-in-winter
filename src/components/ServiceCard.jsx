@@ -16,7 +16,7 @@ const ServiceCard = ({ service }) => {
         <div className="flex justify-between items-center">
           <span className="font-bold text-[#FF6B6B]">${service.price}</span>
           <Link
-            to={`/service/${service.serviceId}`}
+            to={`/service/${service.serviceId}`} 
             className="bg-[#FF8F8F] hover:bg-[#FF6B6B] text-white font-semibold px-4 py-2 rounded-lg transition-colors duration-300"
           >
             View Details
