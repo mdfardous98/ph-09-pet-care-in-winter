@@ -22,7 +22,7 @@ const RoutesWrapper = () => {
       />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-      <Route path="/forget-password" element={<ForgetPassword / {<ForgetPassword />} />
+      <Route path="/forget-password" element={<ForgetPassword />} />
       <Route
         path="/profile"
         element={
