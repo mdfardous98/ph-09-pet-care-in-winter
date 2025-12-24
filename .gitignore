@@ -27,3 +27,9 @@ dist-ssr
 .env
 .env.local
 .env.*.local
+
+
+project_code.html
+project_code.txt
+
+.firebaserc
