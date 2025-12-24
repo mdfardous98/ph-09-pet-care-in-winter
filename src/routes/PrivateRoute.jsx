@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Navigate, useLocation } from "react-router-dom";
-import { AuthContext } from "../providers/AuthContext";
+import { AuthContext } from "../provider/AuthContext";
 import { ClimbingBoxLoader } from "react-spinners";
 
 const PrivateRoute = ({ children }) => {
